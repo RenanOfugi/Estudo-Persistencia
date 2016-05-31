@@ -1,5 +1,8 @@
 package xml;
 
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(propOrder={"nome","email"})
 public class Aluno {
 
 	private String nome;
