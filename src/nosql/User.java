@@ -1,35 +1,41 @@
 package nosql;
 
 public class User {
-	
-	private Gender gender;
-	private Name name;
-	private boolean verified;
-	private byte[] image;
 
-	public enum Gender {
-		MALE, FEMALE
-	};
+	private String name;
+	private String gender;
+	private String email;
+	private int age;
 	
-	public static class Name{
-		
-		private String first;
-		private String last;
-		
-		public String getFirst(){
-			return first;
-		}
-		
-		public void setFirst(String first){
-			this.first = first;
-		}
-		
-		public String getLast(){
-			return last;
-		}
-		
-		public void setLast(String last){
-			this.last = last;
-		}
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public String getGender(){
+		return gender;
+	}
+	
+	public void setGender(String gender){
+		this.gender = gender;
+	}
+	
+	public String getEmail(){
+		return email;
+	}
+	
+	public void setEmail(String email){
+		this.email = email;
+	}
+	
+	public int getAge(){
+		return age;
+	}
+	
+	public void setAge(int age){
+		this.age = age;
 	}
 }
